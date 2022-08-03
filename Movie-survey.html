@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial scale=1.0">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles.css" />
+      <title>Enzo's Movie Survey</title>	
+    </head>
+    <body>
+      <h1 id="title">Enzo's Movie Survey</h1>
+	  <p id="description" class="description">Tell us which kind of movies you think are awesome!</p>
+	  <form id="survey-form">
+		<h2>Personal Information</h2>
+		<fieldset>
+			<label id="name-label">Name: <input id="name" type="text" placeholder="First name Last Name" required /></label>
+			<label id="email-label">E-mail: <input id="email" type="email" placeholder="E-mail" required/> </label>
+			<label id="number-label">Age: <input id="number" type="number" placeholder="" min="0" max="120" required /> </label>
+		</fieldset>
+		<h2>Movie Preferences</h2>
+		<fieldset>
+			<p>What is your favorite movie genre?</p>
+			<label><input type="checkbox" name="genre" value="drama" class="inline" checked/> Drama</label>
+			<label><input type="checkbox" name="genre" value="comedy" class="inline"/> Comedy</label>
+			<label><input type="checkbox" name="genre" value="action" class="inline" /> Action</label>
+			<label><input type="checkbox" name="genre" value="horror" class="inline" /> Horror</label>
+			<label><input type="checkbox" name="genre" value="musical" class="inline" /> Musical</label>
+			
+			<p>Where do you enjoy watching movies the most?</p>
+			<label><input type="radio" name="viewing-method" value="theater" class="inline" checked> Movie Theater</label>
+			<label><input type="radio" name="viewing-method" value="tv" class="inline"> TV at home</label>
+			<label><input type="radio" name="viewing-method" value="pc" class="inline"> Personal Computer</label>
+			
+			<label>What is the biggest contributing factor to making a movie great in your eyes?		
+				<select name="movie-factor" id="dropdown">
+					<option value=""> (select one)</option>
+					<option value="1"> Compelling story</option> 
+					<option value="2"> Great acting</option> 
+					<option value="3"> Amazing cinematography</option>
+					<option value="4"> Beautiful music</option> 
+					<option value="5"> Super entertaining</option>
+				</select>
+			</label>
+			<label>Who are your favorite Directors?
+				<textarea rows="7" cols="30" placeholder="Tarantino, Nolan, Fincher..."></textarea>
+			</label>
+			
+			<input type="submit" value="Submit" />
+			
+			
+		</fieldset>
+	  </form>
+    </body>	
+	
+  </html>
